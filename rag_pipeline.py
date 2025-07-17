@@ -6,7 +6,7 @@ import faiss
 import numpy as np
 
 # 🌐 Configure Gemini API from Streamlit Secrets
-genai.configure(api_key=st.secrets["AIzaSyDWypnP5Ds8_Yw3myn1yzDFxswasR8aBWM"])
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 # 📄 Extract text from PDF
